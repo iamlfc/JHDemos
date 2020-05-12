@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn01_gd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="DoClick"
+        android:text="增"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn02_gd"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn02_gd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="DoClick"
+        android:text="删"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/btn01_gd"
+        app:layout_constraintRight_toLeftOf="@id/btn03_gd"
+        app:layout_constraintTop_toTopOf="@id/btn01_gd" />
+
+    <Button
+        android:id="@+id/btn03_gd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="DoClick"
+        android:text="改"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/btn02_gd"
+        app:layout_constraintRight_toLeftOf="@id/btn04_gd"
+        app:layout_constraintTop_toTopOf="@id/btn01_gd" />
+
+    <Button
+        android:id="@+id/btn04_gd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="DoClick"
+        android:text="查"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/btn03_gd"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn01_gd" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rlv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:background="#8ee5ee"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn01_gd"
+        app:layout_constraintVertical_weight="1"></androidx.recyclerview.widget.RecyclerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
